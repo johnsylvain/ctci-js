@@ -1,0 +1,20 @@
+{
+  "name": "ctci-js",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/johnsylvain/ctci-js.git",
+  "author": "John Sylvain <john.n.sylvain@gmail.com>",
+  "license": "MIT",
+  "babel": {
+    "presets": ["es2015"]
+  },
+  "scripts": {
+    "test": "./node_modules/.bin/jest"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-jest": "^20.0.3",
+    "babel-preset-es2015": "^6.24.1",
+    "jest": "^20.0.4"
+  }
+}
