@@ -2,6 +2,7 @@
 JavaScript ES6 solutions to various technical interview questions.
 - Cracking the Coding Interview
 - Algorithms and Data Structures
+- Implementations of native JavaScript methods
 
 ## Testing
 ```bash
