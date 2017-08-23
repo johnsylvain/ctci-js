@@ -1,5 +1,7 @@
-# Cracking the Coding Interview solutions
-JavaScript ES6 solutions to Cracking the Coding Interview.
+# Technical Interview Practice
+JavaScript ES6 solutions to various technical interview questions.
+- Cracking the Coding Interview
+- Algorithms and Data Structures
 
 ## Testing
 ```bash
@@ -10,6 +12,6 @@ yarn
 yarn test
 
 # Run test for specific problem set
-yarn test -- chapter1
-yarn test -- chapter1/ch1-q1.spec.js
+yarn test -- ctci
+yarn test -- ctci/chapter1/ch1-q1.spec.js
 ```
