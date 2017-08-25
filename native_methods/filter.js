@@ -11,7 +11,7 @@ export function filter(arr, func, context) {
   let i = 0, output = new Array();
 
   for(; i < arr.length; i++) {
-    if (func.call(context, arr[i], i, this)) 
+    if (func.call(context, arr[i], i, arr)) 
       output.push(arr[i])
   }
 
