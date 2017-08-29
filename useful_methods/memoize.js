@@ -4,7 +4,7 @@
  *
  *
  * @param  {function} func expensive function to be memoized
- * @return {*} result from cache or function call
+ * @return {function} func wrapped with memoization for caching expensive calls.
  */
 export function memoize(func) {
   let cache = {};
