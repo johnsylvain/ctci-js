@@ -7,22 +7,18 @@
  * @return {boolean}     return true for balanced, false otherwise
  */
 export function isBalanced(str) {
-
-  let open = ['(', '{', '['];
-  let close = [')', '}', ']'];
-
   let stack = [];
-  let expected = null;
+  let open = { '{': '}', '[': ']', '(': ')' };
+  let closed = { '}': true, ']': true, ')': true };
 
   str.split('').forEach(char => {
-    if (open.indexOf(char) > -1)
+    if (open[char]) {
       stack.push(char);
-    else if (close.indexOf(char) > -1) {
-      expected = open[close.indexOf(char)];
-      if (stack.length === 0 || (stack.pop() !== expected)) return false;
+    } else if (closed[char]) {
+      if (open[stack.pop()] !== char) return false;
     }
+
   });
 
   return stack.length === 0;
-
-}
+};
