@@ -1,22 +1,12 @@
-// export const sumTwo = (a) => (b) => {
-//   return a + b;
-// }
-
-// function argsArray(argsObject) {
-//   return Array.prototype.slice.call(argsObject, 0)
-// }
-//
-// function curry(fn, n) {
-//   let args = argsArray(arguments);
-//   if (n === args.length - 2) {
-//     return f.apply(undefined, args.slice(2))
-//   } else {
-//     return function() {
-//       return curry.apply(undefined, args.concat(arguments))
-//     }
-//   }
-// }
-
+/**
+ * Given a function, return a curried version
+ *
+ * Time: O(N)
+ *
+ * @param  {function} fn    function to be curried
+ * @param  {object} args    array of arguments
+ * @return {function}       
+ */
 export function curry(fn, ...args) {
   if (args.length >= fn.length) {
     return fn(...args);
